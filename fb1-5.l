@@ -11,3 +11,4 @@
 \n     { return EOL; }
 [ \t]  { /*ignore whitespace */ }
 .      { printf("Mystery character %c\n", *yytext); }
+%%

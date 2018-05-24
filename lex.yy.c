@@ -330,6 +330,8 @@ void yyfree (void *  );
 
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
+/* Begin user sect3 */
+
 typedef unsigned char YY_CHAR;
 
 FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;
@@ -453,7 +455,7 @@ char *yytext;
 #line 1 "fb1-5.l"
 #line 2 "fb1-5.l"
 #include "fb1-5.tab.h"
-#line 457 "lex.yy.c"
+#line 459 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -637,7 +639,7 @@ YY_DECL
     
 #line 4 "fb1-5.l"
 
-#line 641 "lex.yy.c"
+#line 643 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -771,7 +773,7 @@ YY_RULE_SETUP
 #line 14 "fb1-5.l"
 ECHO;
 	YY_BREAK
-#line 775 "lex.yy.c"
+#line 777 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1769,3 +1771,6 @@ void yyfree (void * ptr )
 #define YYTABLES_NAME "yytables"
 
 #line 14 "fb1-5.l"
+
+
+
