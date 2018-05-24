@@ -1,1 +1,5 @@
 *.out
+*.tab.h
+*.tab.c
+lex.yy.c
+fb[0-9]+-[0-9]+
