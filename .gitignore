@@ -2,4 +2,4 @@
 *.tab.h
 *.tab.c
 lex.yy.c
-fb*
+fb
