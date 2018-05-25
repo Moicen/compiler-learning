@@ -1,0 +1,14 @@
+In programs that include scanners, the performance of the scanner frequently deter-
+mines the performance of the entire program. Early versions of lex read from yyin one
+character at a time. Since then, flex has developed a flexible (perhaps overly so) three-
+level input system that allows programmers to customize it at each level to handle any
+imaginable input structure.
+In most cases, a flex scanner reads its input using stdio from a file or the standard input,
+which can be the user console. There’s a subtle but important difference between read-
+ing from a file and reading from the console—readahead. If the scanner is reading from
+a file, it should read big chunks to be as fast as possible. But if it’s reading from the
+console, the user is probably typing one line at a time and will expect the scanner to
+process each line as soon as it’s typed. In this case, speed doesn’t matter, since a very
+slow scanner is still a lot faster than a fast typist, so it reads one character at a time.
+Fortunately, a flex scanner checks to see whether its input is from the terminal and
+generally does the right thing automatically.

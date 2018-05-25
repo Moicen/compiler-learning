@@ -1,0 +1,4 @@
+To handle its input, a flex scanner uses a structure known as a YY_BUFFER_STATE , which
+describes a single input source. It contains a string buffer and a bunch of variables and
+flags. Usually it contains a FILE* for the file it’s reading from, but it’s also possible to
+create a YY_BUFFER_STATE not connected a file to scan a string already in memory.
