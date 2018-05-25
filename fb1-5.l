@@ -1,6 +1,5 @@
 %{
 #include "fb1-5.tab.h"
-int yylval;
 %}
 %%
 "+"    { return ADD; }
@@ -15,8 +14,4 @@ int yylval;
 ")"    { return CP; }
 "//".* /* ignore comments */
 .      { printf("Mystery character %c\n", *yytext); }
-<<<<<<< HEAD
 %%
-=======
-%%
->>>>>>> 6fed1dad8b946989026336977b3a0b330c644722

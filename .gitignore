@@ -1,11 +1,5 @@
-*.tab.h
-*.tab.c
 *.out
-<<<<<<< HEAD
-lex.yy.c
-=======
 *.tab.h
 *.tab.c
 lex.yy.c
-fb[0-9]+-[0-9]+
->>>>>>> 6fed1dad8b946989026336977b3a0b330c644722
+fb*

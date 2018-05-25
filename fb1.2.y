@@ -12,7 +12,8 @@
 %%
 
 calclist: /* nothing */
- | calclist exp EOL { printf("= %d\n", $1); }
+ | calclist exp EOL { printf("= %d(0x%x)\n> ", $2, $2); }
+ | calclist EOL { printf("> "); }
  ;
 
 exp: factor
@@ -34,6 +35,7 @@ term: NUMBER
 
 main(int argc, char **argv)
 {
+  printf("> ");
   yyparse();
 }
 
