@@ -1,2 +1,2 @@
 # compiler-learning
-learn compiler
+learn compiler, flex & bison
